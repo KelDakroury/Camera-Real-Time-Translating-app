@@ -1,1 +1,1 @@
-# Camera-Real-Time-Translating-app
+# Real-Time-Translating-app

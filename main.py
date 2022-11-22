@@ -1,7 +1,8 @@
 import time
-
 import cv2
 import yolov5
+from googletrans import Translator
+
 
 def get_yolov5_model(size='n'):
     model_name = f'yolov5{size}.pt'
@@ -21,12 +22,16 @@ def yolov5_process(model, frame):
     new_frame = results.render()[0]
     return new_frame
 
-
+def translate_model_classes(model, target_lang='ru'):
+    translator = Translator()
+    for i in range(len(model.names)):
+        translated_name = translator.translate(model.names[i], src='en', dest=target_lang).text
+        model.names[i] = f'{model.names[i]} ({translated_name})'
 
 if __name__ == '__main__':
     # load pretrained model
     model = get_yolov5_model(size='n')
-
+    translate_model_classes(model)
 
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():

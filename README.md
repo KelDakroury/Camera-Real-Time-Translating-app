@@ -26,4 +26,6 @@ Note that the image has to be inside testing_images directory.
 
 ## Demo
 
-[alt](https://media1.tenor.com/images/5f00d7d2dafbd476151ade014a8a563f/tenor.gif)
+<p align="center">
+  <img src="https://media1.tenor.com/images/5f00d7d2dafbd476151ade014a8a563f/tenor.gif" width="500"><br/>
+</p>

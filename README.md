@@ -10,7 +10,7 @@ Intall the requirements via `pip3 install -r requirements.txt` and then run `pyt
 
 **Android app (YOLOv4 with TFLite)**
 
-Download and install the apk `real-time translator.apk` from the root directory into your android phone
+Download and install the apk from [google-drive](https://drive.google.com/file/d/1Gx48kttmMPT5u6n4GA95ywp23GxwEJRt/view?usp=sharing)
 
 In order to build and test the model, you have to run the following commands:
 ```

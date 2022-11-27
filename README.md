@@ -4,15 +4,19 @@ The purpose of the project is to facilitate learning new languages through compu
 
 ## Testing
 
-**Laptop (YOLOv5)**
+### Laptop (YOLOv5)
 
 Intall the requirements via `pip3 install -r requirements.txt` and then run `python3 main.py`
 
-**Android app (YOLOv4 with TFLite)**
+### Android app (YOLOv4 with TFLite)
 
 Download and install the apk from [google-drive](https://drive.google.com/file/d/1Gx48kttmMPT5u6n4GA95ywp23GxwEJRt/view?usp=sharing)
 
-In order to build and test the model, you have to run the following commands:
+### YOLO 9K
+
+We also added an option for detection on image (static not real-time) with Yolo 9k which can detect up to 9000 classes!
+
+In order to build and test the model, you need to run the following commands:
 ```
 > build.sh
 > detect.sh image_name.jpg
